@@ -1,0 +1,127 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Vladimir\\source\\repos\\xamarin_blogges\\xamarin_blogges\\xamarin_blogges.Android\\xamarin_blogges.Android.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Vladimir\\source\\repos\\xamarin_blogges\\xamarin_blogges\\xamarin_blogges.Android\\xamarin_blogges.Android.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Vladimir\\source\\repos\\xamarin_blogges\\xamarin_blogges\\xamarin_blogges.Android\\xamarin_blogges.Android.csproj",
+        "projectName": "xamarin_blogges.Android",
+        "projectPath": "C:\\Users\\Vladimir\\source\\repos\\xamarin_blogges\\xamarin_blogges\\xamarin_blogges.Android\\xamarin_blogges.Android.csproj",
+        "packagesPath": "C:\\Users\\Vladimir\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Vladimir\\source\\repos\\xamarin_blogges\\xamarin_blogges\\xamarin_blogges.Android\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "configFilePaths": [
+          "C:\\Users\\Vladimir\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "monoandroid12.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "monoandroid12.0": {
+            "projectReferences": {
+              "C:\\Users\\Vladimir\\source\\repos\\xamarin_blogges\\xamarin_blogges\\xamarin_blogges\\xamarin_blogges.csproj": {
+                "projectPath": "C:\\Users\\Vladimir\\source\\repos\\xamarin_blogges\\xamarin_blogges\\xamarin_blogges\\xamarin_blogges.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "monoandroid12.0": {
+          "dependencies": {
+            "Xamarin.Essentials": {
+              "target": "Package",
+              "version": "[1.7.0, )"
+            },
+            "Xamarin.Forms": {
+              "target": "Package",
+              "version": "[5.0.0.2196, )"
+            }
+          }
+        }
+      }
+    },
+    "C:\\Users\\Vladimir\\source\\repos\\xamarin_blogges\\xamarin_blogges\\xamarin_blogges\\xamarin_blogges.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Vladimir\\source\\repos\\xamarin_blogges\\xamarin_blogges\\xamarin_blogges\\xamarin_blogges.csproj",
+        "projectName": "xamarin_blogges",
+        "projectPath": "C:\\Users\\Vladimir\\source\\repos\\xamarin_blogges\\xamarin_blogges\\xamarin_blogges\\xamarin_blogges.csproj",
+        "packagesPath": "C:\\Users\\Vladimir\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Vladimir\\source\\repos\\xamarin_blogges\\xamarin_blogges\\xamarin_blogges\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Vladimir\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
+          "dependencies": {
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "System.Text.Json": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "Xamarin.Essentials": {
+              "target": "Package",
+              "version": "[1.7.0, )"
+            },
+            "Xamarin.Forms": {
+              "target": "Package",
+              "version": "[5.0.0.2196, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

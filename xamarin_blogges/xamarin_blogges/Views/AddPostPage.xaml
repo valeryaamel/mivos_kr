@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="xamarin_blogges.Views.AddPostPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Entry x:Name="posttitle" 
+                Placeholder="Заголовок"/>
+            <Editor x:Name="posttext"
+                            HeightRequest="350"
+                    Placeholder="Текст"
+                   />
+            <StackLayout>
+                <StackLayout x:Name="categ" 
+                    Orientation="Horizontal">
+                    <Label Text="Категории: "
+                       FontSize="18"/>
+                </StackLayout>
+                <Picker x:Name="cats"
+                        SelectedIndexChanged="cats_SelectedIndexChanged"
+                        Title="Категории"/>
+            </StackLayout>
+            <StackLayout>
+                <StackLayout x:Name="lang"
+                    Orientation="Horizontal">
+
+                    <Label Text="Языки: "
+                       FontSize="18"/>
+                </StackLayout>
+                <Picker x:Name="langs"
+                        SelectedIndexChanged="langs_SelectedIndexChanged"
+                        Title="Языки"/>
+            </StackLayout>
+            <Button Clicked="Button_Clicked"
+                    Text="Отправить"
+                    Margin="5,5,5,5"
+                    BackgroundColor="#9575CD"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

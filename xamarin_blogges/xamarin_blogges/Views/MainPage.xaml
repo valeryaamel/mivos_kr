@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="xamarin_blogges.MainPage"
+             Visual="Material"
+             NavigationPage.HasNavigationBar="False">
+
+    
+    <StackLayout>
+        
+        <StackLayout 
+            BackgroundColor="#9575CD"
+            Padding="5,5,5,5"
+            Orientation="Horizontal">
+            <Label Text="ProgBlog" 
+                   FontSize="32" 
+                   FontAttributes="Bold"
+                   TextColor="White"/>
+            <ImageButton
+                Clicked="ImageButton_Clicked"
+                Source="acc.png"
+                WidthRequest="45"
+                HeightRequest="45"
+                BackgroundColor="#9575CD"
+                HorizontalOptions="EndAndExpand"/>
+        </StackLayout>
+
+
+        <ListView x:Name="PostsList"
+                  Margin="5,5,5,5"
+                  RowHeight="80"
+                  SeparatorVisibility="Default"
+                  ItemSelected="PostsList_ItemSelected">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <ViewCell.View>
+                            <StackLayout>
+                                <Label Text="{Binding Title}"
+                                       FontAttributes="Bold"
+                                       FontSize="20"
+                                       TextColor="#9575CD"/>
+                                <Label Text="{Binding Username}"
+                                       FontSize="18"
+                                       FontAttributes="Italic"/>
+                            </StackLayout>
+                        </ViewCell.View>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+
+        <ImageButton x:Name="addbtn"
+                         Clicked="addbtn_Clicked"
+                         Source="pen"
+                         CornerRadius="10"
+                         BackgroundColor="#9575CD"
+                         HeightRequest="50"
+                         WidthRequest="50"
+                         VerticalOptions="EndAndExpand"
+                         HorizontalOptions="EndAndExpand"/>
+
+    </StackLayout>
+
+</ContentPage>

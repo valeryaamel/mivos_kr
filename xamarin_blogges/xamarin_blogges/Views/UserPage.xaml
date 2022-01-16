@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="xamarin_blogges.Views.UserPage">
+    <ContentPage.Content>
+        <StackLayout Margin="5,5,5,5">
+            <StackLayout x:Name="nnn">
+                <Label Text="Имя пользователя"
+                   FontAttributes="Bold"
+                       Margin="30,30,30,0"
+                   FontSize="25"/>
+                <Entry Text="{Binding Login}"
+                       Margin="30,0,30,0"
+                   FontAttributes="Italic"
+                   FontSize="23"/>
+                <Label Text="Почта"
+                       Margin="30,30,30,0"
+                   FontAttributes="Bold"
+                   FontSize="25"/>
+                <Entry Text="{Binding Email}"
+                       Margin="30,0,30,0"
+                       FontAttributes="Italic"
+                   FontSize="23"/>
+                <Button CornerRadius="30"
+                        x:Name="post"
+                        Margin="30,40,30,40"
+                        TextColor="White"
+                        Clicked="post_Clicked"
+                        BackgroundColor="#9575CD"/>
+                <Button CornerRadius="30"
+                        x:Name="com"
+                        Clicked="com_Clicked"
+                        TextColor="White"
+                        Margin="30,30,40,50"
+                        BackgroundColor="#9575CD"/>
+            </StackLayout>
+            
+
+            <Button Text="Выход"
+                    BackgroundColor="#9575CD"
+                    CornerRadius="30"
+                    TextColor="White"
+                    Clicked="Button_Clicked"
+                    VerticalOptions="EndAndExpand"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

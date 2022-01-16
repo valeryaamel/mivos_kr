@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="xamarin_blogges.Views.UserComments">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Управление комментариями"
+                   FontAttributes="Bold"
+                   FontSize="25"
+                   />
+            <Label Text="Для удаления выберите комментарий и нажмите кионку рядом."
+                   FontSize="16"
+                   FontAttributes="Bold"/>
+            
+            <ListView x:Name="CommentsList"
+                  Margin="5,5,5,5"
+                  RowHeight="80"
+                  SeparatorVisibility="Default"
+                  ItemSelected="CommentsList_ItemSelected"
+                >
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <ViewCell.View>
+                                <StackLayout Orientation="Horizontal">
+                                <StackLayout Orientation="Vertical">
+
+                                    <Label Text="{Binding Title}"
+                                       FontAttributes="Bold"
+                                       FontSize="25"
+                                       TextColor="#9575CD"/>
+                                    <Label Text="{Binding Text}"
+                                       FontAttributes="Italic"
+                                       FontSize="18"
+                                       />
+                                </StackLayout>
+                                <ImageButton HorizontalOptions="EndAndExpand"
+                                                 Source="trash"
+                                                 BackgroundColor="White"
+                                                 Clicked="ImageButton_Clicked_2"
+                                            WidthRequest="30"/>
+                                </StackLayout>
+                            </ViewCell.View>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

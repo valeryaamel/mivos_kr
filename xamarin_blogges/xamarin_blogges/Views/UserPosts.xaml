@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="xamarin_blogges.Views.UserPosts">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Управление постами"
+                   FontAttributes="Bold"
+                   FontSize="25"
+                   />
+            <Label Text="Для удаления выберите пост и нажмите кионку рядом."
+                   FontSize="16"
+                   FontAttributes="Bold"/>
+            <ListView x:Name="PostsList"
+                  Margin="5,5,5,5"
+                  RowHeight="30"
+                  SeparatorVisibility="None"
+                      ItemSelected="PostsList_ItemSelected"
+                >
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <ViewCell.View>
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="{Binding Title}"
+                                       FontAttributes="Bold"
+                                       FontSize="25"
+                                       TextColor="#9575CD"/>
+                                    <ImageButton HorizontalOptions="EndAndExpand"
+                                                 Source="trash"
+                                                 BackgroundColor="White"
+                                                 Clicked="ImageButton_Clicked_1"
+                                            WidthRequest="50"/>
+                                </StackLayout>
+                            </ViewCell.View>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
